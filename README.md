@@ -75,13 +75,13 @@ git clone [https://github.com/your-username/your-repository-name.git](https://gi
 cd your-repository-name
 
 ### 3. Set Up a Virtual Environment (Recommended)
-# Create the virtual environment
+Create the virtual environment
 python -m venv venv
 
-# Activate it
-# On Windows:
+Activate it
+On Windows:
 .\venv\Scripts\Activate
-# On macOS/Linux:
+On macOS/Linux:
 source venv/bin/activate
 
 ### 4. Install Dependencies
