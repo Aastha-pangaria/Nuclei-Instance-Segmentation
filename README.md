@@ -38,33 +38,17 @@ Machine Learning: Scikit-learn
 ## Project Structure
 The repository is organized into several key scripts that form the project pipeline:
 
-File
+| File                  | Description                                                                                             |
+| --------------------- | ------------------------------------------------------------------------------------------------------- |
+| `data.py`             | **Data Processor:** Loads the GlaS dataset from Deeplake, preprocesses images and masks to 256x256, and saves them as `.npy` files. |
+| `train.py`            | **Model Trainer:** Loads the processed data, builds the U-Net model, trains it with data augmentation, and saves the final predictions. |
+| `submissions.py`      | **Submission Formatter:** Loads the model's predictions and converts them into the Run-Length Encoded (RLE) format for the `submission.csv` file. |
+| `evaluate.py`         | **Model Evaluator:** Calculates the final Dice Coefficient of the model on the unseen test set by comparing predictions to the ground-truth masks. |
+| `visualize.py`        | **Result Visualizer:** Displays a random sample of test images with the model's predicted segmentation masks overlaid for qualitative assessment. |
+| `requirements.txt`    | Lists all the Python dependencies required to run the project.                                           |
 
-Description
+---
 
-data.py
-
-Data Processor: Loads the GlaS dataset from Deeplake, preprocesses images and masks to 256x256, and saves them as .npy files.
-
-train.py
-
-Model Trainer: Loads the processed data, builds the U-Net model, trains it with data augmentation, and saves the final predictions.
-
-submissions.py
-
-Submission Formatter: Loads the model's predictions and converts them into the Run-Length Encoded (RLE) format for the submission.csv file.
-
-evaluate.py
-
-Model Evaluator: Calculates the final Dice Coefficient of the model on the unseen test set by comparing predictions to the ground-truth masks.
-
-visualize.py
-
-Result Visualizer: Displays a random sample of test images with the model's predicted segmentation masks overlaid for qualitative assessment.
-
-requirements.txt
-
-Lists all the Python dependencies required to run the project.
 
 ## Setup and Usage
 To run this project, follow these steps:
