@@ -19,6 +19,10 @@ The trained U-Net model achieved a Dice Coefficient of 0.68 on the unseen test s
 
 ### Example Prediction:
 Here is a sample prediction from the test set, with the model's predicted mask overlaid in purple.
+<img width="675" height="673" alt="image" src="https://github.com/user-attachments/assets/3ebd34ce-35a5-499d-8b9e-2ded7690367d" />
+<img width="656" height="636" alt="image" src="https://github.com/user-attachments/assets/dbc9cd2a-8081-4b25-aa28-3812408ed454" />
+
+
 
 ## Technology Stack
 Frameworks: TensorFlow, Keras
@@ -71,8 +75,8 @@ Python 3.8+
 Git
 
 ### 2. Clone the Repository
-git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
-cd your-repository-name
+git clone [https://github.com/your-username/your-repository-name.git](https://github.com/Aastha-pangaria/Nuclei-Instance-Segmentation)
+cd Nuclei-Instance-Segmentation
 
 ### 3. Set Up a Virtual Environment (Recommended)
 Create the virtual environment
